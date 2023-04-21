@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Primer challenge del programa one de alura. Encriptador de caracteres"
+    />
+    <meta name="keywords" content="alura, one, challenge" />
+    <meta name="author" content="Yonathan albino" />
+    <title>Yonathan albino challenge</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="script.js" />
+    <link rel="shortcut icon" href="img/Vector.png" />
+  </head>
+  <body>
+    <div class="contenedor-general">
+      <div class="logo">
+        <img src="img/Vector.png" alt="" />
+      </div>
+      <div class="main">
+        <div class="seccion-1">
+          <div class="caja-texto">
+            <input
+              type="text"
+              id="txtMensaje"
+              placeholder="Ingrese aquí su texto"
+            />
+          </div>
+          <div class="caja-accion">
+            <div class="aviso">
+              <div class="icono">
+                <img src="img/Vector (1).png" alt="" />
+              </div>
+              <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+              <button
+                class="boton1"
+                id="btnEncriptar"
+                onclick="encriptar_mensaje()"
+              >
+                Encriptar
+              </button>
+              <button class="boton2" onclick="desencriptar()">
+                Desencriptar
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar-cotenido">
+            <textarea
+              class="inputEncriptado ocultar"
+              id="MensajeOculto"
+            ></textarea>
+            <div id="imagen" class="imagen">
+              <img src="img/Muñeco.png" alt="" />
+            </div>
+            <div id="texto" class="texto">
+              <textarea
+                class="p1"
+                id="txtEncriptado"
+                placeholder="Ningún mensaje fue encontrado"
+              ></textarea>
+              <p class="p2">
+                Ingresa el texto que desees encriptar o desencriptar.
+              </p>
+            </div>
+            <div class="botonCopiado">
+              <button
+                class="boton ocultar"
+                id="btnCopiar"
+                onclick="copiarTexto()"
+              >
+                Copiar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

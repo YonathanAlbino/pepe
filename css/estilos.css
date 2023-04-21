@@ -1,0 +1,339 @@
+body{
+    background-color: #F3F5FC;
+}
+
+.contenedor-general{
+    display: flex;
+    flex-direction: row;
+    
+    width: 93%;
+    height: 95vh;
+    margin: auto;
+    justify-content: space-around;
+   
+}
+
+.logo {
+    position: relative;
+}
+
+.logo img{
+    position: absolute;
+    top: 5%;
+}
+
+.main{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    height: 90vh;;
+    
+    margin-top: 30px;
+}
+
+.main .caja-texto{
+    height: 20%;
+    width: 90%;
+    position: relative;
+}
+
+.main .caja-accion{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+.main .caja-accion .aviso{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+}
+
+
+.main .caja-accion .aviso  p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    margin-left: 5px;
+}
+
+.main .caja-accion .botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    height: 40%;
+  
+}
+
+.main .caja-accion .botones button {
+width: 45%;
+height: 100%;
+border-radius: 24px;
+}
+
+.main .caja-accion .botones button:hover {
+    cursor: pointer;
+ }
+
+.main .caja-accion .botones .boton1 {
+color: #fff;
+background-color: #0A3871;
+}
+
+.main .caja-accion .botones .boton1:hover {
+    background-color: #176bd1;
+ }
+
+
+.main .caja-accion .botones .boton2 {
+ background-color: #ecf0f5;
+}
+
+.main .caja-accion .botones .boton2:hover {
+    background-color: #e1e4e8;
+ }
+
+ .main .sidebar .sidebar-cotenido .botonCopiado{
+    height: 8%;
+    width: 40%;
+    margin-bottom: 20px;
+ }
+
+.main .sidebar .sidebar-cotenido .botonCopiado .boton{
+    background-color: #e1e4e8;
+    border-radius: 24px;
+    width: 100%;
+    height: 100%;
+}
+
+ .main .caja-texto input{
+    position: absolute;
+    left: 10%;
+    bottom: 0%;
+    width: 80%;
+    border: none;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 150%;
+color: #0A3871;
+background-color: #F3F5FC;
+}
+
+.main .seccion-1 .caja-texto input:focus{
+outline: none;
+}
+
+.main .caja-texto input::placeholder{
+    color: #0A3871;
+}
+
+
+.main .seccion-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 60%;
+    align-items: center;
+}
+
+.main .sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    align-items: center;
+}
+
+.main .sidebar .sidebar-cotenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #fff;
+    box-shadow:  0px 24px 32px -8px rgba(0, 0, 0, .5 );
+    border-radius: 32px;
+}
+
+.main .sidebar .sidebar-cotenido textarea{
+    border: none;
+    text-align: center;
+}
+
+.main .sidebar .sidebar-cotenido textarea:focus{
+    outline: none;
+}
+
+.main .sidebar .sidebar-cotenido .imagen{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 80%;
+    height: 40%;
+}
+
+.ocultar{
+    visibility: hidden;
+}
+
+
+
+.main .sidebar .sidebar-cotenido .inputEncriptado{
+    border: none;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 150%;
+    color: #0A3871;
+    height: 20%;
+    margin-top: 20px;
+    width: 95%;
+}
+
+.main .sidebar .sidebar-cotenido .inputEncriptado:focus{
+    outline: none;
+}
+
+.main .sidebar .imagen{
+ width: 45%;
+}
+
+
+.main .sidebar .imagen img{
+    width: 70%;
+   }
+   
+
+.main .sidebar .texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+    height: 30%;
+    width: 80%;
+    text-align: center;
+}
+
+.main .sidebar .texto input{
+width: 90%;
+
+}
+
+.main .sidebar .sidebar-cotenido .texto .p1 {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+width: 100%;
+}
+
+.main .sidebar .sidebar-cotenido .texto .p2 {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+}
+
+/* responsive */
+
+@media screen and (max-width:1280px){
+   .main{
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .main .seccion-1{
+    width: 100%;
+   }
+
+   .main .seccion-1 .caja-accion{
+    height: 30%;
+   }
+
+   .main  .caja-accion{
+    justify-content: end;
+   }
+
+
+   .main .sidebar{
+    width: 100%;
+    height: 60%;
+    justify-content: center;
+   }
+
+   .main .sidebar img{
+    display: none;
+   }
+
+   .main .sidebar .sidebar-cotenido {
+    width: 90%;
+    height: 95%;
+    
+   }
+
+   .main .sidebar .sidebar-cotenido .imagen{
+    height: 0%;
+   }
+
+   .main .sidebar .texto{
+    height: 50%;
+    justify-content: center;
+   }
+
+   .main .sidebar .sidebar-cotenido .botonCopiado{
+    height: 30%;
+   }
+}
+
+@media screen and (max-width:480px){
+    .main .caja-accion .botones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main .seccion-1 .caja-accion{
+        height: 50%;
+        justify-content: center;
+    }
+
+    .main .caja-accion .botones {
+        width: 100%;
+        height: 60%;
+    }
+
+    .main .caja-accion .botones button{
+        width: 100%;
+    }
+
+    .main .caja-texto input{
+        font-size: 22px;
+    }
+    
+    .main .sidebar .sidebar-cotenido{
+        height: 100%;
+    }
+
+    .main .sidebar .texto p {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
